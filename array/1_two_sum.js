@@ -1,10 +1,7 @@
 // https://leetcode.com/problems/two-sum/
 // https://www.youtube.com/watch?v=_CoCO62fn_E
 
-//  @param {number[]} nums
-//  @param {number} target
-//  @return {number[]}
- 
+
 // Test cases
 const nums = [2,7,11,15], target = 9 //[0,1]
 // const nums = [3,2,4], target = 6 //[1,2]
