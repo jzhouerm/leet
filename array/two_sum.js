@@ -29,8 +29,8 @@ let twoSum = function(nums, target) {
 }
 
 /*
-The better way is using JS objects. 
-The characteristic of JS objects is it has unique keys.
+Approach #2 (Better)
+The better way is using JS objects. The characteristic of JS objects is it has unique keys.
 Complexity: O of N because we're visiting each number only once
 */
 
