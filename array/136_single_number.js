@@ -26,3 +26,8 @@ let singleNumber = function(nums) {
 // singleNumber(nums)
 
 console.log(singleNumber(nums))
+/*
+
+Follow up: Could you implement a solution with a linear runtime complexity and without using extra memory?
+The solution above uses extra memory. If we're using a set, are we technically violating the space complexity?
+*/
