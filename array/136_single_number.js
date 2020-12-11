@@ -3,8 +3,8 @@ https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/arra
 
 // Test cases 
 // nums = [2,2,1]          //Output: 1
-nums = [4,1,2,1,2]      //Output: 4
-// nums = [1]              //Output: 1
+// nums = [4,1,2,1,2]      //Output: 4
+nums = [1]              //Output: 1
 
 
 let singleNumber = function(nums) {
@@ -29,5 +29,6 @@ console.log(singleNumber(nums))
 /*
 
 Follow up: Could you implement a solution with a linear runtime complexity and without using extra memory?
-The solution above uses extra memory. If we're using a set, are we technically violating the space complexity?
+The solution above uses extra memory because we're using a set
+If we're using a set, are we technically violating the space complexity?
 */
