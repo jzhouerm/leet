@@ -45,11 +45,7 @@ const obj ={
   x:1
 }
 
-Object.defineProperty(obj, 'y', {
-  writable: false
-})
 
-obj['y'] = 2
 
 
 
