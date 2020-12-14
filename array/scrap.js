@@ -40,10 +40,7 @@ obj['a'] = 2
 console.log(obj) 
 //   { x: 1, y: 2, a: 2 }
 
-//Write code so key/value pairs cannot be added
-const obj ={
-  x:1
-}
+
 
 
 
