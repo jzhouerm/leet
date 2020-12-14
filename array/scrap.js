@@ -21,25 +21,3 @@ const obj ={
   
   console.log(obj)
 //   { x: 1 } //cannot add values or edit values to original object
-
-
-
-
-
-
-
-
-
-const obj ={
-  x:1
-}
-
-obj['y'] = 2
-obj['a'] = 2
-
-
-
-
-
-
-
