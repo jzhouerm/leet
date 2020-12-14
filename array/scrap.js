@@ -51,6 +51,5 @@ Object.defineProperty(obj, 'y', {
 
 obj['y'] = 2
 
-console.log(obj)
-//   { x: 1 } //cannot add values or edit values to original object
+
 
