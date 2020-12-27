@@ -24,4 +24,3 @@ const obj ={
 //   { x: 1 } //cannot add values or edit values to original object
 // i want to git stash this
 //new stuff
-//i want to go back to this commit
