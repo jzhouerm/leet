@@ -21,5 +21,3 @@ const obj ={
   
   console.log(obj)
 //   { x: 1 } //cannot add values or edit values to original object
-//   { x: 1 } //cannot add values or edit values to original object
-
