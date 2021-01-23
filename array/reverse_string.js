@@ -1,3 +1,4 @@
+// Solution 1
 // var reverseString = function(s) {
 //     const swap = (index1, index2) => {
 //         return (index2, index1)
