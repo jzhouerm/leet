@@ -3,8 +3,3 @@
 
 
 }
-
-// ln 4-5 added 1-22-21 bc gpg failed to sign data
-// "terminal.integrated.shellArgs.linux": [
-//     "-l"
-// ]
