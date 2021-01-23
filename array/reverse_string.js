@@ -11,6 +11,7 @@
 //     return s. reverse()
 // };
 
+// Solution 2
 var reverseString = function(s) {
     const swap =(arr,idx1,idx2)=>{
         [arr[idx1],arr[idx2]]=[arr[idx2],arr[idx1]]
