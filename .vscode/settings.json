@@ -1,3 +1,9 @@
 {
-    "discord.workspaceElapsedTime": true
+    "discord.workspaceElapsedTime": true,
+
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ]
 }
+
+// ln 4-5 added 1-22-21 bc gpg failed to sign data
