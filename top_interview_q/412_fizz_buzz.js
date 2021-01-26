@@ -18,5 +18,5 @@ var fizzBuzz = function(n) {
 }
 
 console.log(
-    fizzBuzz(15)
+    fizzBuzz(1)
 )
