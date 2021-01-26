@@ -1,4 +1,4 @@
-Solution #1
+Solution 
 var fizzBuzz = function(n) {
     let arr = []
     for(let i=1; i<=n; i++){
