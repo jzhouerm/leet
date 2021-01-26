@@ -13,7 +13,6 @@ var fizzBuzz = function(n) {
         if(i%3 !== 0 && i%5 !==0){
             arr.push(i.toString(10))
         }
-        // console.log("n=", n, "i=",i)
     }
     return arr
 }
