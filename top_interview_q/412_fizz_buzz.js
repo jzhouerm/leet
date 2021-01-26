@@ -1,3 +1,4 @@
+// Solution #1
 var fizzBuzz = function(n) {
     let arr = []
     for(let i=1; i<=n; i++){
