@@ -13,6 +13,8 @@ function maxSubarraySum(arr, num) {
     for(let i = 0; i < arr.length - num + 1; i++){
         //subtract num from length b/c you can't start adding if there's less than 'num'
         //integers remaining in the array
+        //temp is storing the current value to compare to the max value 
+
         temp = 0
         for(let j=0; j<num; j++){
             temp += arr[i+j]
