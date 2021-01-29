@@ -1,4 +1,4 @@
-// Solution 1 (My brute force)
+// Solution 1 (My brute force solution)
 
 // var isAnagram = function(s, t) {
 //     let sHash = {}
