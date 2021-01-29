@@ -50,6 +50,7 @@ function maxSubarraySum(arr, num) {
     let tempSum = 0
 
     if(arr.length < num) return null
+    // Edge case - when num is larger than length of array
 
     for(let i = 0; i < num; i++){
         maxSum += arr[i]
