@@ -9,7 +9,7 @@ function countUniqueValues(arr){
             i++;
             arr[i] = arr[j]
         }
-        console.log(i,j)
+        // console.log(i,j)
     }
     return i+1
 
@@ -17,7 +17,7 @@ function countUniqueValues(arr){
 }
 
 
-let NumArr = [0]
+let NumArr = [1,1,2,3,3,4,5,6,6,7]
 console.log(
     countUniqueValues(NumArr)
 )
