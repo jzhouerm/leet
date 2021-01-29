@@ -1,6 +1,8 @@
 //Udemy Solution
 function countUniqueValues(arr){
 //The the number of unique integers using a counter
+//input must be sorted
+    if (arr.length === 0) return 0
     let i =0
     for(let j=1; j<arr.length; j++){
         if(arr[i] !== arr[j]){
@@ -9,12 +11,13 @@ function countUniqueValues(arr){
         }
         console.log(i,j)
     }
+    return i+1
 
 
 }
 
 
-let NumArr = [1,1,2,3,3,4,5,6,6,7]
+let NumArr = [0]
 console.log(
     countUniqueValues(NumArr)
 )
