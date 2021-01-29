@@ -8,7 +8,7 @@ function maxSubarraySum(arr, num) {
         return null
     }
     let max = -Infinity;
-    for(let i=0; i<arr.length - num + 1; 1++){
+    for(let i=0; i<arr.length - num + 1; i++){
         temp = 0
         for(let j=0; j<num; j++){
             temp += arr[i+j]
@@ -18,7 +18,7 @@ function maxSubarraySum(arr, num) {
         }
     }
 
-    
+    return max
 }
 
 
