@@ -4,14 +4,14 @@ function takeShower(){
 
 function eatBreakfast(){
     let meal = cookFood()
-    return `Eating ${meal}`
     console.log(meal)
+    return `Eating ${meal}`
 }
 
 function cookFood(){
     let items = ["Oatmeal", "Eggs", "Protein Shake"]
-    return items[Math.floor(Math.random()*items.length)]
     console.log(items[Math.floor(Math.random()*items.length)])
+    return items[Math.floor(Math.random()*items.length)]
 }
 
 function wakeUp(){
