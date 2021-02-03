@@ -1,4 +1,4 @@
-funtion takeShower(){
+function takeShower(){
     return "Showering!"
 }
 
