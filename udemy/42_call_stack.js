@@ -20,6 +20,3 @@ function wakeUp(){
     console.log("Ok ready to go to work!")
 }
 
-// console.log(
-    wakeUp()
-// )
