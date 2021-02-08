@@ -24,3 +24,8 @@ function wakeUp(){
     wakeUp()
 // )
 
+function wakeUp(){
+    takeShower()
+    eatBreakfast()
+    console.log("Ok ready to go to work!")
+}
