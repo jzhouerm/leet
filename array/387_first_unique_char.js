@@ -29,3 +29,5 @@ var firstUniqChar = function(s) {
     
     
 };
+
+// https://www.youtube.com/watch?v=21LDcomZ1as
