@@ -4,11 +4,13 @@ return the power of the base to the exponent. This function should mimic the fun
 Math.pow() - do not worry about negative bases and exponents.
 */
 
+function power(base, exponent){
 
+}
 
 console.log(
 
-    power(2,0)
-    power(2,2)
-    power(2,4)
+    // power(2,0)  //1
+    // power(2,2)  //4
+    // power(2,4)  //16
 )
