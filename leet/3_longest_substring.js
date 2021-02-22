@@ -5,6 +5,8 @@ const s = "pwwkew"
 const s = ""
 const s = "dvdf"
 
+//need to do a nested for loop
+//need to iterate through the entire array and find the longest and save then restart at new index and repeat
 var lengthOfLongestSubstring = function(s) {
     let arr = s.split("")
     let longest = []
