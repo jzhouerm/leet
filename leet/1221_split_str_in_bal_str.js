@@ -24,7 +24,8 @@ var balancedStringSplit = function(s) {
                 temp2= 0
             }
         }
-        console.log(temp1,temp2, counter)
     }
     return counter
 };
+
+//80ms
