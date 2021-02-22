@@ -39,4 +39,5 @@ function solution(S) {
 
 console.log(
     solution(S)
+    
 )
