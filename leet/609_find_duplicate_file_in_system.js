@@ -47,8 +47,10 @@ var findDuplicate = function(paths) {
             dict[key].push(root + curr[j].slice(0, start));
         }
     }
-    return Object.values(dict).filter(arr => arr.length > 1);
+    // return Object.values(dict).filter(arr => arr.length > 1);
 };
+
+
 
 console.log(
     findDuplicate(paths)
@@ -56,11 +58,6 @@ console.log(
 
 /*
 
-console.log("curr[j]: ", curr[j], "start: ", start, "end: ", end,  "key: ", key)
-curr[j]:  1.txt(abcd) start:  5 end:  10 key:  abcd
-curr[j]:  2.txt(efgh) start:  5 end:  10 key:  efgh
-curr[j]:  3.txt(abcd) start:  5 end:  10 key:  abcd
-curr[j]:  4.txt(efgh) start:  5 end:  10 key:  efgh
-curr[j]:  4.txt(efgh) start:  5 end:  10 key:  efgh
-
+Solution: https://leetcode.com/problems/find-duplicate-file-in-system/discuss/104146/Simple-JavaScript-solution-using-map
 */
+
