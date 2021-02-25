@@ -19,4 +19,4 @@ function change(num) {
     return coins.reverse();
   }
   
-  // console.log(change(33));
+  console.log(change(33));
