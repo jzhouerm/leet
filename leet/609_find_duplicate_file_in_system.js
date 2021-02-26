@@ -2,15 +2,16 @@
 // https://leetcode.com/problems/find-duplicate-file-in-system/
 let paths = ["root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)","root 4.txt(efgh)"]
 
-
 // Solution 1 - 108-164ms
 var findDuplicate = function(paths) {
     let dict = {}
     let output = []
     
     for (let i = 0; i< paths.length; i++){
-        let curr = paths[i].split(' ')
-        let root = curr[0] + '/'
+        let curr = paths[i].split(' ')      //[ 'root/a', '1.txt(abcd)', '2.txt(efgh)' ][ 'root/c', '3.txt(abcd)' ][ 'root/c/d', '4.txt(efgh)' ][ 'root', '4.txt(efgh)' ]
+        //split input by space to separate root from file paths
+        let root = curr[0] + '/'            //root/a/       root/c/     root/c/d/       root/
+        //save the root hich is the first substring of each element in the array
         
         for (let j = 1; j < curr.length; j++){
             let start = curr[j].indexOf('(')
@@ -90,3 +91,27 @@ console.log(
 Solution#2: https://leetcode.com/problems/find-duplicate-file-in-system/discuss/104146/Simple-JavaScript-solution-using-map
 */
 
+/*
+Questions: (Assuming Notes #1-5 is given)
+1. Can the input have a filename as its own element in the array without a root?
+2. Can the elements in the input array be of other data types (not string)?
+3. Can the directory name repeat and contain different filenames?
+4. Can I console.log? Google?
+
+Observations:
+Input is a flat array
+The root directory and all of it's files are a string as a single element in the input array
+Need to extract the first substring before the space in each element
+
+Approach/Options:
+
+
+Edge Cases Covered?
+
+
+Can it be optimized?
+
+
+Bonus Questions:
+
+*/
