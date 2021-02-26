@@ -43,7 +43,7 @@ var findDuplicate = function(paths) {
         }
     }
     return Object.values(map).filter(dups => dups.length > 1);
-};
+}; // 120-164ms
 
 
 
