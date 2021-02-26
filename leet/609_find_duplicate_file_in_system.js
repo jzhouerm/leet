@@ -5,24 +5,24 @@ let paths = ["root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.t
 // Solution 1 - 108-164ms
 var findDuplicate = function(paths) {
     let dict = {}
-    let output = []
     
     for (let i = 0; i< paths.length; i++){
         let curr = paths[i].split(' ')      //[ 'root/a', '1.txt(abcd)', '2.txt(efgh)' ][ 'root/c', '3.txt(abcd)' ][ 'root/c/d', '4.txt(efgh)' ][ 'root', '4.txt(efgh)' ]
-        //split element by space to separate root from file paths
+        //split element by spaces to separate the substring of the root from file paths, new array created for each element from original input array
         let root = curr[0] + '/'            //root/a/       root/c/     root/c/d/       root/
         //save the root which is the first substring of each element in the array
         
-        for (let j = 1; j < curr.length; j++){
+        for (let j = 1; j < curr.length; j++){      //iterates through files only!
+            //
             let start = curr[j].indexOf('(')
             let end = curr[j].indexOf(')')
-            let key = curr[j].slice(start + 1, end)
+            let key = curr[j].slice(start + 1, end)    //abcd efgh abcd efgh efgh
             // console.log("curr[j]: ", curr[j], "start:", start, "end:", end,  "key:", key, "dict:", dict)
             if (!dict.hasOwnProperty(key)) {
                 dict[key] = []
             }
             // console.log("curr[j]:", curr[j], "dict[key]:", dict[key] )
-            dict[key].push(root + curr[j].slice(0, start));
+            dict[key].push(root + curr[j].slice(0, start));     //pushes the filename to key, excludes content
             // console.log("key: ", key, "exists?", dict.hasOwnProperty(key), dict)
             
         }
