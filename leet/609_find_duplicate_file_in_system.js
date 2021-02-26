@@ -9,9 +9,9 @@ var findDuplicate = function(paths) {
     
     for (let i = 0; i< paths.length; i++){
         let curr = paths[i].split(' ')      //[ 'root/a', '1.txt(abcd)', '2.txt(efgh)' ][ 'root/c', '3.txt(abcd)' ][ 'root/c/d', '4.txt(efgh)' ][ 'root', '4.txt(efgh)' ]
-        //split input by space to separate root from file paths
+        //split element by space to separate root from file paths
         let root = curr[0] + '/'            //root/a/       root/c/     root/c/d/       root/
-        //save the root hich is the first substring of each element in the array
+        //save the root which is the first substring of each element in the array
         
         for (let j = 1; j < curr.length; j++){
             let start = curr[j].indexOf('(')
