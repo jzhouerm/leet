@@ -26,16 +26,14 @@ let twoSum = function(nums, target) {
 }
 
 /*
-Approach #2 (Better)
+Approach #2 76ms
 The better way is using JS objects. The characteristic of JS objects is it has unique keys.
 Complexity: O(n) because we're visiting each number only once
 */
-// comp = {7:0}
-function twoSum2(nums, target){
-    const comp = {}
-    const len = nums.length
 
-    
+function twoSum2(nums, target){
+    const comp = {}     // comp = {7:0}
+    const len = nums.length
 
     for (let i = 0; i < len; i++){
         //if our number exists as a complement and is >=0, then return the complement's index which is nums[i] and index of the number itself
@@ -50,6 +48,28 @@ function twoSum2(nums, target){
     return []
     
 }       
+
+//Approach #3 80ms
+function twoSum(nums, target){
+    const comp = new Map()
+    const len = nums.length
+
+    for (let i = 0; i < len; i++){
+        //if our number exists as a complement and is >=0, then return the                       
+        //complement's index which is nums[i] and index of the number itself
+        if(comp[nums[i]] >=0){
+            return [comp[nums[i]], i]
+        }
+        //inside complement, subtracting number from the target and saving the index             
+        //as the value
+        comp[target - nums[i]] = i;
+
+    }
+    //in case there are no matches
+    return []
+    
+} 
+
 
 
 //Map stores the order of the key/pair values whereas POJO doesnt but we don't care about order here.

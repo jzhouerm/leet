@@ -2,6 +2,8 @@
 // https://leetcode.com/problems/find-duplicate-file-in-system/
 let paths = ["root/a 1.txt(abcd) 2.txt(efgh)","root/c 3.txt(abcd)","root/c/d 4.txt(efgh)","root 4.txt(efgh)"]
 
+// let paths = ["root/a 1.txt(abcd) 2.txt(efsfgh)","root/c 3.txt(abdfcd)","root/c/d 4.txt(efggdfh)"]
+
 // Solution 1 - 108-164ms
 var findDuplicate = function(paths) {
     let dict = {}
@@ -16,9 +18,9 @@ var findDuplicate = function(paths) {
             //
             let start = curr[j].indexOf('(')
             let end = curr[j].indexOf(')')
-            let key = curr[j].slice(start + 1, end)    //abcd efgh abcd efgh efgh
+            let key = curr[j].slice(start + 1, end)    //abcd efgh abcd efgh efgh       curr[j].substring(start + 1, end) also works
             // console.log("curr[j]: ", curr[j], "start:", start, "end:", end,  "key:", key, "dict:", dict)
-            if (!dict.hasOwnProperty(key)) {
+            if (!dict.hasOwnProperty(key)) {        //if(!dict[key])
                 dict[key] = []
             }
             // console.log("curr[j]:", curr[j], "dict[key]:", dict[key] )
@@ -93,18 +95,18 @@ Solution#2: https://leetcode.com/problems/find-duplicate-file-in-system/discuss/
 
 /*
 Questions: (Assuming Notes #1-5 is given)
-1. Can the input have a filename as its own element in the array without a root?
-2. Can the elements in the input array be of other data types (not string)?
-3. Can the directory name repeat and contain different filenames?
+1. Can the input have a filename as its own element in the array without a root? need to extract index 0
+2. Can the elements in the input array be of other data types (not string)? for .split()
+3. Can the directory name repeat while containing different filenames?
 4. Can I console.log? Google?
 
 Observations:
-Input is a flat array
+Input is a flat array and Output is 
 The root directory and all of it's files are a string as a single element in the input array
 Need to extract the first substring before the space in each element
 
 Approach/Options:
-
+Nested for loop (Loop 1: iterate to separate root Loop 2: Extract the content as a key for hash, then push files as values)
 
 Edge Cases Covered?
 
