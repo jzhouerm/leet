@@ -18,7 +18,7 @@ class HashICreated {
         if (!this.data[address]) {      //if data doesn't exist, create array
             this.data[address] = []
         }
-        this.data[address].push([key, value])   //if it exists, push intro array
+        this.data[address].push([key, value])   //if it exists, push into array
         return this.data
     }
 
@@ -30,7 +30,7 @@ class HashICreated {
                 return currentBucket[0][1]
             }
 
-            for ( let i = 0; i < currentBucket.length; i++) { // O(n)       //if slow has moe than 1, need to iterate to find key
+            for ( let i = 0; i < currentBucket.length; i++) { // O(n)       //if key's values has more than 1 hash/address, need to iterate to find key
                 if (currentBucket[i][0] === key) {
                     return currentBucket[i][1]
                 }  
@@ -47,4 +47,7 @@ In terminal,
 >(paste hash function)
 >const newHash = new HashICreated(13)
 >newHash.set("taco", 26)
+>newHash.set("sushi", 100)
+>newHash.set("lox", 10)
+>newHash._hash("taco")      //4
 */ 
