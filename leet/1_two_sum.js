@@ -26,7 +26,7 @@ let twoSum = function(nums, target) {
 }
 
 /*
-Approach #2 76ms
+Approach #2 
 The better way is using JS objects. The characteristic of JS objects is it has unique keys.
 Complexity: O(n) because we're visiting each number only once
 */
