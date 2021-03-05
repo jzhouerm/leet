@@ -50,3 +50,7 @@ console.log(
     solution(S)
     
 )
+
+/*
+https://leetcode.com/discuss/interview-question/963586/Microsoft-or-OA-or-Codility
+*/
