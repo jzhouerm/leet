@@ -2,6 +2,12 @@
 Write a function solution that, given an integer N, returns the 
 maximum possible value obtained by inserting one '5' digit inside 
 the decimal representation of integer N.
+
+input: 1234 -> output: 51234
+input: 7643 -> output 76543
+input: 0 -> output 50
+input: -661 -> output -5661
+
 */
 
 // let N = 268  //5268
