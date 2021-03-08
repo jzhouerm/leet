@@ -15,7 +15,7 @@ var numUniqueEmails = function(emails) {
     let result = []
     
     function validCheck (email) {
-        let atSign = email.indexOf('@')
+        let atSign = email.indexOf('@') 
         let plus = email.indexOf('+')
         let dot = email.indexOf('.')
         let name = email.substring(0, atSign)
@@ -32,18 +32,18 @@ var numUniqueEmails = function(emails) {
         if (!result.includes(name + '@' + domain)) {
             result.push(name + '@' + domain)
         }
-        
     }
     
     for(let i=0; i<emails.length; i++) {
-        let text = validCheck(emails[i])
+        validCheck(emails[i])
     }
     
     return result.length
 };
 
 /*
-characters after '+' is ignored, and '.' is ignored
-"m.y+name@email.com"    "my@email.com"
-
+Time complexity: O(5n^2)
+O(n): for loop      
+Nested O(n): indexOf x3, replace x1, includes x1
+O(n * 5n) => O(5n^2)
 */
