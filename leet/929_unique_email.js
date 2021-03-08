@@ -1,6 +1,5 @@
         
 /*
- 
 - Iterate through array of emails and check validity using helper fx
 - valid email = string, includes '@', must have chars after '@' and before
     - save name and domain to variables
