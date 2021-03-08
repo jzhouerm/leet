@@ -42,6 +42,7 @@ var numUniqueEmails = function(emails) {
 };
 
 /*
+Space Complexity: O(7n)
 Time complexity: O(5n^2)
 O(n): for loop      
 Nested O(n): indexOf x3, replace x1, includes x1
