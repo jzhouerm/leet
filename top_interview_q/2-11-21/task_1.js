@@ -12,14 +12,14 @@ input: -661 -> output -5661
 
 // let N = 268  //5268
 // let N = 670  //6750
-let N = 0    //50
-// let N = -8000 //-5999
+// let N = 0    //50
+let N = -8000 //-5999
 
 function solution(N) {
     let num = Math.abs(N).toString()
     let largest = -100000
     let str = ""
-
+    
     for (let i = 0; i < num.length+1; i ++){
         let test = str + "5" + num.substring(i, num.length)
         let testNum = parseInt(test)
@@ -35,3 +35,5 @@ function solution(N) {
 console.log(
     solution(N)
 )
+
+//try solve using stack
