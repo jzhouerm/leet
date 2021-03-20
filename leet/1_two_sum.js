@@ -76,7 +76,7 @@ function twoSum(nums, target){
 
 // twoSum2(nums, target)
 // console.log(twoSum(nums, target))
-console.log(twoSum2(nums, target))
+// console.log(twoSum2(nums, target))
 
 
 // For Map, it returns JS objects...9-7=2...index=1 
