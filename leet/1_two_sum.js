@@ -82,7 +82,7 @@ console.log(twoSum2(nums, target))
 // For Map, it returns JS objects...9-7=2...index=1 
 // => {2:1}
 // => {complement/key : value}
-// comp[target - nums[i]] = i;
+comp[target - nums[i]] = i;
 
 [Running] node "/Users/jules/Development/code/leet/array/tempCodeRunnerFile.js"
 Map(0) { '2': 1, '7': 0, '-2': 2, '-6': 3 }
