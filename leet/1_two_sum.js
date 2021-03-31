@@ -89,4 +89,4 @@ console.log(twoSum2(nums, target))
 // Map(0) { '2': 1, '7': 0, '-2': 2, '-6': 3 }
 // undefined
 
-[Done] exited with code=0 in 0.055 seconds
+// [Done] exited with code=0 in 0.055 seconds
