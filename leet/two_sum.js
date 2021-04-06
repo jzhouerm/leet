@@ -36,5 +36,3 @@ function twoSum2(nums, target){
     return []
     
 }       
-z
-
