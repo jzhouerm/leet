@@ -45,7 +45,7 @@ function twoSum2(nums, target){
 
     }
     //in case there are no matches
-    return []
+    return 
     
 }       
 
