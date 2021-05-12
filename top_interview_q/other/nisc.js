@@ -39,6 +39,5 @@ sayHello(arr, k)
 // NISC interview question
 // NISC interview question
 // NISC interview question
-// NISC interview question
 
 
