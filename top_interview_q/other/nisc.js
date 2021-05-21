@@ -35,3 +35,4 @@ sayHello(arr, k)
   
 // NISC interview question
 1
+2
