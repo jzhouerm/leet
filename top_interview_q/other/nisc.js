@@ -34,3 +34,4 @@ sayHello(arr, k)
 // output = [3,6,2,7,5,1,4]
   
 // NISC interview question
+1
